@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* background colors */
+  --bg-color: #FFFFFF;
+
+  /* text colors */
+  --primary-text-color: #252B42;
+  --secondary-text-color: #737373;
+  --light-text-color: #FFFFFF;
+  
+  /* elements color */
+  --primary-color: #96BB7C;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  width: calc(50vw + 197px);
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.menu-brandname {
+  color: var(--primary-text-color);
+  font-size: 1.3rem;
+}
+
+
+.menu-links, .menu-buttons {
+  display: flex;
+  list-style: none;
+  gap: 21px;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.menu-link a {
+  color: var(--secondary-text-color);
+}
+
+.menu-link a, .menu-button a {
+  text-decoration: none;
+}
+
+.menu-buttons {
+  gap: 45px;
+}
+
+.menu-button {
+  padding: 1em 1.2em;
+  border-radius: 5px;
+
+  background-color: var(--primary-color);
+}
+
+.menu-login {
+  background-color: transparent;
+  padding: 0;
+}
+
+.menu-login a {
+  color: var(--primary-color);
+}
+
+.menu-join_us a {
+  color: var(--light-text-color);
+}

@@ -8,6 +8,8 @@
 :root {
   /* background colors */
   --bg-color: #FFFFFF;
+  --bg-light-color: #FAFAFA;
+  --bg-pink: #FFF2F3;
 
   /* text colors */
   --primary-text-color: #252B42;
@@ -25,6 +27,35 @@ body {
   font-weight: 700;
   width: calc(50vw + 197px);
   margin: auto;
+}
+
+header {
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 75px;
+  right: 0;
+  background-color: var(--bg-pink);
+  border-radius: 50px;
+  width: 420px;
+  height: 520px;
+  z-index: -1;
+}
+
+header::after {
+  content: '';
+  inset: 0;
+  transform: translate3d(0, 30%, 0);
+  position: absolute;
+  border: solid 1px red;
+  background: 
+  right /contain no-repeat url('../images/bg_girl.png'),
+  98% 35% / 48% no-repeat url('../images/bg_empty_bubble.svg'),
+  91% 54% / 45% no-repeat url('../images/bg_bubble.svg'),
+  51% 19% / 50px no-repeat url("../images/bg_circle.svg")
 }
 
 a {

@@ -225,9 +225,20 @@ main {
 
 /* Banner Stats */
 .banner_stats {
-  margin-top: 30%;
+  margin: 30% auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .banner_stats-card {
+  width: 25%;
+  padding: 1em 0;
+  color: var(--primary-color);
+  font-size: 3rem;
+  text-align: center;
+}
 
+.banner_stats-card p {
+  font-size: .9rem;
+  color: var(--primary-text-color);
 }

@@ -18,6 +18,13 @@
   
   /* elements color */
   --primary-color: #96BB7C;
+  --danger-color: #E74040;
+
+  /* Layers */
+  --layer-top: 100;
+  --layer-middle: 50;
+  --layer-bottom: 10;
+
 }
 
 body {
@@ -42,7 +49,6 @@ header::before {
   border-radius: 50px;
   width: 420px;
   height: 520px;
-  z-index: -1;
 }
 
 header::after {
@@ -50,12 +56,12 @@ header::after {
   inset: 0;
   transform: translate3d(0, 30%, 0);
   position: absolute;
-  border: solid 1px red;
   background: 
   right /contain no-repeat url('../images/bg_girl.png'),
   98% 35% / 48% no-repeat url('../images/bg_empty_bubble.svg'),
   91% 54% / 45% no-repeat url('../images/bg_bubble.svg'),
-  51% 19% / 50px no-repeat url("../images/bg_circle.svg")
+  51% 19% / 50px no-repeat url("../images/bg_circle.svg");
+  pointer-events: none;
 }
 
 a {
@@ -69,6 +75,7 @@ a {
 
   background-color: var(--primary-color);
   color: var(--light-text-color);
+  cursor: pointer;
 }
 
 /* Header */
@@ -151,4 +158,59 @@ a {
   border: solid 1px var(--primary-color);
   background-color: var(--light-text-color);
   color: var(--primary-color);
+}
+
+/* Introduce Cards */
+.introduce-cards {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--layer-middle);
+  transform: translate3d(0, 115%, 0);
+}
+
+.introduce-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2em;
+  width: 31%;
+  background-color: var(--bg-color);
+  box-shadow: 0px 13px 19px #00000012;
+}
+
+.introduce-card-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--danger-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduce-card-icon svg {
+  width: calc(inherit / 2);
+  height: auto;
+}
+
+.introduce-card-title {
+  font-size: 1.1rem;
+  color: var(--primary-text-color);
+}
+
+.introduce-card-line {
+  border: none;
+  width: 50px;
+  height: 2px;
+  background-color: var(--danger-color);
+}
+
+.introduce-card-description {
+  font-weight: 400;
+  color: var(--secondary-text-color);
 }

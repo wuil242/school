@@ -101,7 +101,6 @@ main {
   font-size: 1.3rem;
 }
 
-
 .menu-links, .menu-buttons {
   display: flex;
   list-style: none;
@@ -112,8 +111,12 @@ main {
 
 .menu-link a {
   color: var(--secondary-text-color);
+  transition: color .3s cubic-bezier(1,.52,0,.19);
 }
 
+.menu-link a:hover {
+  color: var(--primary-text-color);
+}
 
 .menu-buttons {
   gap: 45px;

@@ -86,6 +86,13 @@ main {
   margin: auto;
 }
 
+.line {
+  border: none;
+  width: 100px;
+  height: 6px;
+  background-color: var(--danger-color);
+}
+
 /* Header */
 
 /* Main Menu */
@@ -215,10 +222,8 @@ main {
 }
 
 .introduce-card-line {
-  border: none;
   width: 50px;
   height: 2px;
-  background-color: var(--danger-color);
 }
 
 .introduce-card-description {
@@ -228,7 +233,7 @@ main {
 
 /* Banner Stats */
 .banner_stats {
-  margin: 30% auto;
+  margin-top: 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -245,3 +250,38 @@ main {
   font-size: .9rem;
   color: var(--primary-text-color);
 }
+
+/* Section for client message matter  */
+.message_client {
+  width: 100vw;
+  margin-top: 20%;
+}
+
+.message_client-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.message_client-content p {
+  font-size: .9rem;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  width: 40%;
+}
+
+.message_client-title {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+
+.message_client-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  /* background-color: transparent; */
+  color: var(--primary-color);
+}
+

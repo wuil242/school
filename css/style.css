@@ -28,12 +28,10 @@
 }
 
 body {
-  background-color: var(--bg-color);
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  width: calc(50vw + 197px);
-  margin: auto;
+  background-color: var(--bg-light-color);
 }
 
 header {
@@ -68,6 +66,11 @@ a {
   text-decoration: none;
 }
 
+main {
+  background-color: var(--bg-color);
+  width: 100vw;
+}
+
 /* Components */
 .button {
   padding: 1em 1.2em;
@@ -76,6 +79,11 @@ a {
   background-color: var(--primary-color);
   color: var(--light-text-color);
   cursor: pointer;
+}
+
+.center {
+  width: calc(50vw + 197px);
+  margin: auto;
 }
 
 /* Header */
@@ -213,4 +221,13 @@ a {
 .introduce-card-description {
   font-weight: 400;
   color: var(--secondary-text-color);
+}
+
+/* Banner Stats */
+.banner_stats {
+  margin-top: 30%;
+}
+
+.banner_stats-card {
+
 }
